@@ -1,0 +1,56 @@
+.container {
+    margin: 200px auto;
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    background-color: rgb(220, 220, 220);
+    width: 200px;
+    /* height: 100px; */
+    text-align: center;
+    padding: 31px 0;
+    font-size: 120px;
+}
+
+.box:hover {
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.a {
+    border-right: solid;
+    border-bottom: solid;
+}
+
+.b {
+    border-bottom: solid;
+}
+
+.c {
+    border-left: solid;
+    border-bottom: solid;
+}
+
+.d {
+    border-right: solid;
+}
+
+.f {
+    border-left: solid;
+}
+
+.g {
+    border-right: solid;
+    border-top: solid;
+}
+
+.h {
+    border-top: solid;
+}
+
+.i {
+    border-left: solid;
+    border-top: solid;
+}
