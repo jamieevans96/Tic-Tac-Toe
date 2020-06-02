@@ -7,18 +7,31 @@
     <title>Document</title>
 </head>
 
+<h1>TIC-TAC-TOE</h1>
+
 <body>
-    
-    <div class="container">
-        <div class="box a">x</div>
-        <div class="box b">x</div>
-        <div class="box c">x</div>
-        <div class="box d">x</div>
-        <div class="box e">x</div>
-        <div class="box f">x</div>
-        <div class="box g">x</div>
-        <div class="box h">x</div>
-        <div class="box i">x</div>
+    <div class="wrapper" id="wrapper">
+        <div id="playerForm" class="playerForm">
+            <label for="player1">Player 1</label>
+            <input type="text" id="p1" placeholder="Enter Name"><br><br>
+            <label for="player2">Player 2</label>
+            <input type="text" id="p2" placeholder="Enter Name"><br><br>
+            <button id="button" onclick="playerSubmit()">Submit</button>
+        </div>
+
+        <div class="container" id="container">
+            <div class="box a"></div>
+            <div class="box b"></div>
+            <div class="box c"></div>
+            <div class="box d"></div>
+            <div class="box e"></div>
+            <div class="box f"></div>
+            <div class="box g"></div>
+            <div class="box h"></div>
+            <div class="box i"></div>
+        </div>
+
+        <button onclick="gameBoard.render()">START GAME</button>
     </div>
 
 </body>

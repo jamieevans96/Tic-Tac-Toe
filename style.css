@@ -1,14 +1,61 @@
+body {
+    background: rgb(227,227,227);
+    background: linear-gradient(160deg, rgba(227,227,227,1) 0%, rgb(155, 198, 211) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 140px;
+    text-align: center;
+    margin: 30px;
+}
+
+.wrapper {
+    display: block;
+}
+
+.playerForm {
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 300px;
+    right: 300px;
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    width: 400px;
+    padding: 4px;
+    font-size: 18px;
+}
+
+label {
+    margin: 10px;
+    padding: 10px;
+    font-size: 32px;
+}
+
+button {
+    font-size: 24px;
+    padding: 6px 20px 6px 20px;
+}
+
 .container {
-    margin: 200px auto;
+    z-index: 0;
+    margin: 50px auto;
     display: grid;
-    width: 600px;
+    width: 606px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .box {
-    background-color: rgb(220, 220, 220);
+    background-color: none;
     width: 200px;
-    /* height: 100px; */
+    height: 138px;
     text-align: center;
     padding: 31px 0;
     font-size: 120px;
