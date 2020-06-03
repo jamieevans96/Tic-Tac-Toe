@@ -1,14 +1,17 @@
 body {
     background: rgb(227,227,227);
-    background: linear-gradient(160deg, rgba(227,227,227,1) 0%, rgb(155, 198, 211) 100%);
+    background: linear-gradient(160deg, #B8D8D8 0%, #7A9E9F 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: 'PT Sans', sans-serif;
 }
 
 h1 {
     font-size: 140px;
     text-align: center;
     margin: 30px;
+    color: white;
+    text-shadow: 2px 2px rgb(50, 50, 50);
 }
 
 .wrapper {
@@ -16,14 +19,55 @@ h1 {
 }
 
 .playerForm {
+    display: flex;
     position: absolute;
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
-    left: 300px;
-    right: 300px;
-    padding: 100px 0 100px 0;
-    text-align: center;
+    left: 31%;
+    padding: 100px 0 0 0;
+}
+
+.formButton {
+    background: #DD7373;
+    box-shadow: 1px 1px black;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 24px;
+    margin: 10px 0 0 20px;
+    height: 110px;
+    width: 110px;
+}
+
+.formButton:hover {
+    transition: 0.1s;
+    background: rgb(212, 74, 74);
+}
+
+.startContainer {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    left: 17%
+}
+
+.startButton {
+    background: #DD7373;
+    box-shadow: 1px 1px black;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0 20px;
+    height: 110px;
+    width: 110px;
 }
 
 input {
@@ -34,20 +78,17 @@ input {
 }
 
 label {
+    color: rgb(52, 65, 68);
+    text-shadow: 2px 2px rgb(200, 200, 200);
     margin: 10px;
     padding: 10px;
     font-size: 32px;
 }
 
-button {
-    font-size: 24px;
-    padding: 6px 20px 6px 20px;
-}
-
 .container {
     z-index: 0;
     margin: 50px auto;
-    display: grid;
+    display: none;
     width: 606px;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -57,13 +98,20 @@ button {
     width: 200px;
     height: 138px;
     text-align: center;
-    padding: 31px 0;
+    padding: 12px 0 50px 0;
     font-size: 120px;
 }
 
 .box:hover {
     background-color: rgb(241, 241, 241);
     cursor: pointer;
+}
+
+.winner {
+    margin-top: 265px;
+    left: 300px;
+    position: absolute;
+    font-size: 48px;
 }
 
 .a {
